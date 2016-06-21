@@ -1,5 +1,4 @@
 set nocompatible
-start
 execute pathogen#infect()
 " Add plugins with
 " $ cd ~/.vim
@@ -25,8 +24,6 @@ set smartindent
 set autoindent
 " Remove whitepsaces on save
 autocmd BufWritePre * :%s/\s\+$//e
-set hlsearch
-nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
 " NERDTree
 let NERDTreeShowHidden=1
 nmap <leader>n :NERDTreeToggle<CR>
@@ -42,3 +39,5 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_ruby_checkers = ['rubocop'] " Your move, creep!
 
 autocmd FileType ruby compiler ruby
+set hlsearch
+nnoremap <leader>j :set hlsearch!<CR>
