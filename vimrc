@@ -1,3 +1,7 @@
+execute pathogen#infect()
+" Add plugins with
+" $ cd ~/.vim
+" $ git submodule add git@source/pluginname.git bundle/pluginname
 filetype on
 syntax on
 colorscheme Tomorrow-Night-Eighties
@@ -19,4 +23,6 @@ set autoindent
 autocmd BufWritePre * :%s/\s\+$//e
 set hlsearch
 nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
-
+" NERDTree
+let NERDTreeShowHidden=1
+nmap <leader>n :NERDTreeToggle<CR>
