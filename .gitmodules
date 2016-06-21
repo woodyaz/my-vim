@@ -10,3 +10,6 @@
 [submodule "bundle/syntastic.git"]
 	path = bundle/syntastic.git
 	url = git@github.com:scrooloose/syntastic.git
+[submodule "bundle/auto-pairs.git"]
+	path = bundle/auto-pairs.git
+	url = git@github.com:jiangmiao/auto-pairs.git
