@@ -1,8 +1,12 @@
+set nocompatible
+start
 execute pathogen#infect()
 " Add plugins with
 " $ cd ~/.vim
 " $ git submodule add git@source/pluginname.git bundle/pluginname
 filetype on
+filetype indent on
+filetype plugin on
 syntax on
 colorscheme Tomorrow-Night-Eighties
 set number
@@ -26,3 +30,15 @@ nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
 " NERDTree
 let NERDTreeShowHidden=1
 nmap <leader>n :NERDTreeToggle<CR>
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_ruby_checkers = ['rubocop'] " Your move, creep!
+
+autocmd FileType ruby compiler ruby
