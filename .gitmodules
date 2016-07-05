@@ -13,3 +13,6 @@
 [submodule "bundle/auto-pairs.git"]
 	path = bundle/auto-pairs.git
 	url = git@github.com:jiangmiao/auto-pairs.git
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = git@github.com:elzr/vim-json.git

@@ -11,3 +11,4 @@ git submodule add git@github.com:tpope/vim-rails.git vim-rails
 git submodule add git@github.com:scrooloose/nerdtree.git nerdtree
 git submodule add git@github.com:scrooloose/syntastic.git syntastic.git
 git submodule add git@github.com:jiangmiao/auto-pairs.git auto-pairs.git
+git submodule add git@github.com:elzr/vim-json.git
