@@ -17,9 +17,6 @@ set history=100
 set noswapfile
 filetype indent on
 set nowrap
-set tabstop=2
-set shiftwidth=2
-set expandtab
 set smartindent
 set autoindent
 " Remove whitepsaces on save
@@ -37,7 +34,14 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_ruby_checkers = ['rubocop'] " Your move, creep!
-
 autocmd FileType ruby compiler ruby
 set hlsearch
 nnoremap <leader>j :set hlsearch!<CR>
+set splitbelow
+set splitright
+set clipboard=unnamed
+set backspace=2
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
