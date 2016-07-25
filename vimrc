@@ -41,7 +41,4 @@ set splitbelow
 set splitright
 set clipboard=unnamed
 set backspace=2
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
-set expandtab
+set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
