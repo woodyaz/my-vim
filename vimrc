@@ -1,7 +1,7 @@
 " START BASIC SETTINGS
 " vi no compatible
 set nocompatible
-" enambe syntax highlights
+" enable syntax highlights
 syntax on
 " enable autoindent, smart indent is no more.
 set autoindent
@@ -14,6 +14,8 @@ set number
 set scrolloff=4
 " Tabs are 2 spaces with backspace
 set tabstop=2 shiftwidth=2 backspace=2
+" Disable swap
+set noswapfile
 " END BASIC SETTINGS
 
 " START PLUGINS
@@ -21,5 +23,17 @@ call plug#begin('plugged')
 Plug 'vim-ruby/vim-ruby'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/nerdtree'
+Plug 'arcticicestudio/nord-vim'
+Plug 'jpo/vim-railscasts-theme'
 call plug#end()
 " END PLUGINS
+
+" Make it pretty
+" 256 glorious colors
+set t_Co=256
+set background=dark
+silent! colorscheme railscasts
+
+" NERDTree
+let NERDTreeShowHidden=1
+nnoremap <C-g> :NERDTreeToggle<CR>
