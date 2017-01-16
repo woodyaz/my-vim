@@ -1,44 +1,39 @@
+" START BASIC SETTINGS
+" vi no compatible
 set nocompatible
-execute pathogen#infect()
-" Add plugins with
-" $ cd ~/.vim
-" $ git submodule add git@source/pluginname.git bundle/pluginname
-filetype on
-filetype indent on
-filetype plugin on
+" enable syntax highlights
 syntax on
-colorscheme Tomorrow-Night-Eighties
-set number
-set showmatch
-let mapleader=" "
-map <leader>s :source ~/.vimrc<CR>
-set hidden
-set history=100
-set noswapfile
-filetype indent on
-set nowrap
-set smartindent
+" enable autoindent, smart indent is no more.
 set autoindent
-" Remove whitepsaces on save
-autocmd BufWritePre * :%s/\s\+$//e
+filetype plugin indent on
+" No tab characters
+set expandtab
+" Line numbers by default
+set number
+" Scroll offset by 4
+set scrolloff=4
+" Tabs are 2 spaces with backspace
+set tabstop=2 shiftwidth=2 backspace=2
+" Disable swap
+set noswapfile
+" END BASIC SETTINGS
+
+" START PLUGINS
+call plug#begin('plugged')
+Plug 'vim-ruby/vim-ruby'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'scrooloose/nerdtree'
+Plug 'arcticicestudio/nord-vim'
+Plug 'jpo/vim-railscasts-theme'
+call plug#end()
+" END PLUGINS
+
+" Make it pretty
+" 256 glorious colors
+set t_Co=256
+set background=dark
+silent! colorscheme railscasts
+
 " NERDTree
 let NERDTreeShowHidden=1
-nmap <leader>n :NERDTreeToggle<CR>
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-setlocal spell spelllang=en_us
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_ruby_checkers = ['rubocop'] " Your move, creep!
-autocmd FileType ruby compiler ruby
-set hlsearch
-nnoremap <leader>j :set hlsearch!<CR>
-set splitbelow
-set splitright
-set clipboard=unnamed
-set backspace=2
-set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+nnoremap <C-g> :NERDTreeToggle<CR>
