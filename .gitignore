@@ -1,2 +1,8 @@
-autoload/
-bundle/
+autoload/*
+!autoload/.gitkeep
+
+bundle/*
+!bundle/.gitkeep
+
+colors/*
+!colors/.gitkeep
