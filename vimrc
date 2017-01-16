@@ -1,44 +1,15 @@
+" vi no compatible
 set nocompatible
-execute pathogen#infect()
-" Add plugins with
-" $ cd ~/.vim
-" $ git submodule add git@source/pluginname.git bundle/pluginname
-filetype on
-filetype indent on
-filetype plugin on
+" enambe syntax highlights
 syntax on
-colorscheme Tomorrow-Night-Eighties
-set number
-set showmatch
-let mapleader=" "
-map <leader>s :source ~/.vimrc<CR>
-set hidden
-set history=100
-set noswapfile
-filetype indent on
-set nowrap
-set smartindent
+" enable autoindent, smart indent is no more.
 set autoindent
-" Remove whitepsaces on save
-autocmd BufWritePre * :%s/\s\+$//e
-" NERDTree
-let NERDTreeShowHidden=1
-nmap <leader>n :NERDTreeToggle<CR>
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-setlocal spell spelllang=en_us
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_ruby_checkers = ['rubocop'] " Your move, creep!
-autocmd FileType ruby compiler ruby
-set hlsearch
-nnoremap <leader>j :set hlsearch!<CR>
-set splitbelow
-set splitright
-set clipboard=unnamed
-set backspace=2
-set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+filetype plugin indent on
+" No tab characters
+set expandtab
+" Line numbers by default
+set number
+" Scroll offset by 4
+set scrolloff=4
+" Tabs are 2 spaces with backspace
+set tabstop=2 shiftwidth=2 backspace=2
