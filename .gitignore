@@ -6,3 +6,6 @@ bundle/*
 
 colors/*
 !colors/.gitkeep
+
+plugged/*
+!plugged/.gitkeep
