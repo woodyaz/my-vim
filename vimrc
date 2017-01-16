@@ -19,7 +19,7 @@ set noswapfile
 " END BASIC SETTINGS
 
 " START PLUGINS
-call plug#begin('plugged')
+call plug#begin('~/.vim/plugged')
 Plug 'vim-ruby/vim-ruby'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/nerdtree'
