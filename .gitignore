@@ -1,1 +1,8 @@
-*.rb
+autoload/*
+!autoload/.gitkeep
+
+colors/*
+!colors/.gitkeep
+
+plugged/*
+!plugged/.gitkeep
