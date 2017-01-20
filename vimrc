@@ -16,6 +16,8 @@ set scrolloff=4
 set tabstop=2 shiftwidth=2 backspace=2
 " Disable swap
 set noswapfile
+" System clipboard of love
+set clipboard=unnamed
 " END BASIC SETTINGS
 
 " START PLUGINS
