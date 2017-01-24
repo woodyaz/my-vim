@@ -27,6 +27,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'arcticicestudio/nord-vim'
 Plug 'jpo/vim-railscasts-theme'
+Plug 'robertbasic/vim-hugo-helper'
+Plug 'mattn/emmet-vim'
 call plug#end()
 " END PLUGINS
 
