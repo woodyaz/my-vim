@@ -18,6 +18,8 @@ set tabstop=2 shiftwidth=2 backspace=2
 set noswapfile
 " System clipboard of love
 set clipboard=unnamed
+" Spelling
+set spelllang=en
 " END BASIC SETTINGS
 
 " START PLUGINS
@@ -27,6 +29,9 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'arcticicestudio/nord-vim'
 Plug 'jpo/vim-railscasts-theme'
+Plug 'martinda/Jenkinsfile-vim-syntax'
+Plug 'JamshedVesuna/vim-markdown-preview'
+Plug 'Valloric/YouCompleteMe'
 call plug#end()
 " END PLUGINS
 
