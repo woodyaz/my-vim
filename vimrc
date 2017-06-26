@@ -32,6 +32,8 @@ Plug 'jpo/vim-railscasts-theme'
 Plug 'martinda/Jenkinsfile-vim-syntax'
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'Valloric/YouCompleteMe'
+Plug 'robertbasic/vim-hugo-helper'
+Plug 'mattn/emmet-vim'
 call plug#end()
 " END PLUGINS
 
