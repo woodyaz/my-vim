@@ -34,6 +34,7 @@ Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'Valloric/YouCompleteMe'
 Plug 'robertbasic/vim-hugo-helper'
 Plug 'mattn/emmet-vim'
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 " END PLUGINS
 
